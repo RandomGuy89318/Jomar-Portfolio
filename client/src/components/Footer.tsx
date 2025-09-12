@@ -19,7 +19,7 @@ const Footer = () => {
             <Mail className="h-6 w-6" />
           </a>
           <a 
-            href="https://github.com/jomarabaten" 
+            href="https://github.com/randomGuy89318" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-accent transition-colors duration-300"

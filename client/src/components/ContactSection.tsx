@@ -42,7 +42,7 @@ const ContactSection = () => {
             </motion.a>
 
             <motion.a 
-              href="https://github.com/jomarabaten" 
+              href="https://github.com/randomGuy89318" 
               target="_blank" 
               rel="noopener noreferrer"
               className="contact-btn bg-card border border-border hover:border-primary group p-8 rounded-xl transition-all duration-300"
@@ -56,7 +56,7 @@ const ContactSection = () => {
                 <Github className="h-8 w-8 text-primary-foreground" />
               </div>
               <h3 className="text-xl font-semibold mb-2">GitHub</h3>
-              <p className="text-muted-foreground">@jomarabaten</p>
+              <p className="text-muted-foreground">@randomGuy89318</p>
             </motion.a>
           </div>
 
