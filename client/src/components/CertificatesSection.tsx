@@ -32,7 +32,7 @@ const CertificatesSection = () => {
       date: "October 18, 2022",
       category: "Professional Certificate",
       description: "Professional Certificate",
-      icon: FaChalkboardTeacher,
+      icon: FaTools,
       certificateId: "e14866f818494efd8ecb4fc9706f6dd4",
     },
     {

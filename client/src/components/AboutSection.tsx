@@ -3,10 +3,10 @@ import { Server, Database, Network, Code } from "lucide-react";
 
 const AboutSection = () => {
   const skills = [
-    { icon: Server, name: "Server Management", level: 85 },
-    { icon: Network, name: "Network Setup", level: 80 },
-    { icon: Code, name: "Web Technologies", level: 75 },
-    { icon: Database, name: "System Maintenance", level: 90 },
+    { icon: Server, name: "Server Management", level: 83 },
+    { icon: Network, name: "Network Setup", level: 83 },
+    { icon: Code, name: "Web Technologies", level: 83 },
+    { icon: Database, name: "System Maintenance", level: 83 },
   ];
 
   const expertiseAreas = [
