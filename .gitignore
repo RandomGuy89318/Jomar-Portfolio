@@ -1,6 +1,45 @@
-node_modules
-dist
+# Dependencies
+node_modules/
+vendor/
+
+# Build outputs
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Laravel specific
+laravel-backend/storage/logs/*
+laravel-backend/storage/framework/cache/*
+laravel-backend/storage/framework/sessions/*
+laravel-backend/storage/framework/views/*
+laravel-backend/bootstrap/cache/*
+!laravel-backend/storage/logs/.gitkeep
+!laravel-backend/storage/framework/cache/.gitkeep
+!laravel-backend/storage/framework/sessions/.gitkeep
+!laravel-backend/storage/framework/views/.gitkeep
+!laravel-backend/bootstrap/cache/.gitkeep
+
+# Database
+laravel-backend/database/database.sqlite
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
 .DS_Store
-server/public
-vite.config.ts.*
-*.tar.gz
+Thumbs.db
+
+# Local development
+.local/
+*.log
+
+# Temporary files
+*.tmp
+*.temp

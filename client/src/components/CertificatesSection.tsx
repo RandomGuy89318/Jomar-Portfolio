@@ -13,7 +13,7 @@ const CertificatesSection = () => {
       category: "Developer Certification",
       description: "300 Hours • Developer Certification",
       icon: SiFreecodecamp,
-      certificateId: "fcc9c62aa-97f8-4076-beb8-4076eda41006",
+      certificateUrl: "/certificates/freecodecamp certificate_1757638706886.png",
     },
     {
       id: "2", 
@@ -23,7 +23,7 @@ const CertificatesSection = () => {
       category: "Professional Certificate",
       description: "Professional Certificate",
       icon: SiGoogle,
-      certificateId: "57d5e758371f4437840dad8f2c5f1412",
+      certificateUrl: "/certificates/Department of Information and Communications Technology DICT-DLS002 Certificate _ Coursebank_1757638702396.pdf",
     },
     {
       id: "3",
@@ -32,8 +32,8 @@ const CertificatesSection = () => {
       date: "October 18, 2022",
       category: "Professional Certificate",
       description: "Professional Certificate",
-      icon: FaTools,
-      certificateId: "e14866f818494efd8ecb4fc9706f6dd4",
+      icon: FaChalkboardTeacher,
+      certificateUrl: "/certificates/Department of Information and Communications Technology DICT-DLS005 Certificate _ Coursebank_1757638704474.pdf",
     },
     {
       id: "4",
@@ -43,7 +43,7 @@ const CertificatesSection = () => {
       category: "System Administration",
       description: "System Administration",
       icon: FaDesktop,
-      certificateId: "m0Ib0GlGZr",
+      certificateUrl: "/certificates/Certificate_of_Completion-Installing and Configuring Computer Systems_1757638715337.pdf",
     },
     {
       id: "5",
@@ -53,7 +53,7 @@ const CertificatesSection = () => {
       category: "Frontend Development",
       description: "Frontend Development",
       icon: SiCss3,
-      certificateId: "5WNDExb2kZ",
+      certificateUrl: "/certificates/Certificate_of_Completion-Introduction to CSS_1757638718841.pdf",
     },
     {
       id: "6",
@@ -63,7 +63,7 @@ const CertificatesSection = () => {
       category: "Network Engineering",
       description: "Network Engineering",
       icon: FaNetworkWired,
-      certificateId: "Lt2N5Tzz4q",
+      certificateUrl: "/certificates/Certificate_of_Completion-Setting Up Computer Networks_1757638723891.pdf",
     },
     {
       id: "7",
@@ -73,7 +73,7 @@ const CertificatesSection = () => {
       category: "Server Management", 
       description: "Server Management",
       icon: FaServer,
-      certificateId: "NQxMyTIVP1",
+      certificateUrl: "/certificates/Certificate_of_Completion-Setting Up Computer Servers_1757638731145.pdf",
     },
     {
       id: "8",
@@ -83,17 +83,13 @@ const CertificatesSection = () => {
       category: "System Support",
       description: "System Support", 
       icon: FaTools,
-      certificateId: "VgUyfaZ2dj",
+      certificateUrl: "/certificates/Certificate_of_Completion-Maintaining Computer System and Networks_1757638721410.pdf",
     },
   ];
 
   const handleViewCertificate = (certificate: typeof certificates[0]) => {
-    // For the freeCodeCamp certificate, we can construct the verification URL
-    if (certificate.issuer === "freeCodeCamp" && certificate.certificateId) {
-      window.open(`https://freecodecamp.org/certification/fcc${certificate.certificateId}/responsive-web-design`, '_blank');
-    } else {
-      // For other certificates, we could implement a modal or handle differently
-      console.log(`Viewing certificate: ${certificate.title}`);
+    if (certificate.certificateUrl) {
+      window.open(certificate.certificateUrl, '_blank');
     }
   };
 
