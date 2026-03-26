@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { SiFreecodecamp, SiGoogle, SiCss3, SiLinux } from "react-icons/si";
-import { FaServer, FaNetworkWired, FaDesktop, FaTools, FaChalkboardTeacher } from "react-icons/fa";
+import { FaServer, FaNetworkWired, FaDesktop, FaTools, FaChalkboardTeacher, FaDatabase } from "react-icons/fa";
 
 const CertificatesSection = () => {
   const certificates = [
@@ -84,6 +84,26 @@ const CertificatesSection = () => {
       description: "System Support", 
       icon: FaTools,
       certificateUrl: "/certificates/Certificate_of_Completion-Maintaining Computer System and Networks_1757638721410.pdf",
+    },
+    {
+      id: "9",
+      title: "Database Fundamentals",
+      issuer: "Certiport",
+      date: "February 28, 2026",
+      category: "Database Certification",
+      description: "Database Certification",
+      icon: FaDatabase,
+      certificateUrl: "/certificates/Databases-cert.pdf",
+    },
+    {
+      id: "10",
+      title: "HTML and CSS",
+      issuer: "Certiport",
+      date: "February 28, 2026",
+      category: "Web Development",
+      description: "Web Development Certification",
+      icon: SiCss3,
+      certificateUrl: "/certificates/HTML and CSS-cert.pdf",
     },
   ];
 
