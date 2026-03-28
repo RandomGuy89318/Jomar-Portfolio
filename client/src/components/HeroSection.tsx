@@ -10,25 +10,14 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="pt-24 pb-20 px-6">
+    <section id="home" className="pt-32 pb-24 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center">
-          <motion.div 
-            className="mb-6"
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-4xl font-bold text-primary-foreground mb-8">
-              JA
-            </div>
-          </motion.div>
-          
           <motion.h1 
-            className="text-5xl md:text-6xl font-bold mb-6"
+            className="text-6xl md:text-7xl font-bold mb-6"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.8 }}
             data-testid="hero-name"
           >
             <span className="bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
@@ -37,20 +26,20 @@ const HeroSection = () => {
           </motion.h1>
           
           <motion.p 
-            className="text-2xl md:text-3xl text-muted-foreground mb-8 font-light"
+            className="text-2xl md:text-3xl text-muted-foreground mb-10 font-light"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             data-testid="hero-title"
           >
             Back-End Developer
           </motion.p>
           
           <motion.p 
-            className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed"
+            className="text-lg text-muted-foreground max-w-2xl mx-auto mb-14 leading-relaxed"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
             data-testid="hero-description"
           >
             Passionate about building robust server-side applications and database systems. 
@@ -61,7 +50,7 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
           >
             <button 
               onClick={() => scrollToSection('certificates')} 
